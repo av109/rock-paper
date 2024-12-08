@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#heading {
+    padding: 30px 0px;
+    text-align: center;
+    border: 2px solid black
+}
+
+#container {
+    max-width: 800px;   /* Prevents container from becoming too wide */
+    margin: 0 auto;     /* Centers the container horizontally */
+    display: flex;      /* Use flexbox for layout */
+    flex-wrap: wrap;    /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;     /* Center items vertically */
+    gap: 20px;         /* Space between flex items */
+    text-align: center; /* Center text within containers */
+    padding: 20px;     /* Add some breathing room */
+}
+
+#playercontainer, #computercontainer {
+    flex: 1;           /* Equal width for player and computer areas */
+    min-width: 200px;  /* Minimum width to prevent squishing */
+    border: 1px solid #ddd; /* Optional: add a light border */
+    padding: 15px;     /* Internal spacing */
+}
+
+
+#score {
+    width: 100%;       /* Full width for score */
+    margin-top: 20px;  /* Space above score */
+}
+
+#buttoncontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-2 {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 14px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
